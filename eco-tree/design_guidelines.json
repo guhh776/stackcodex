@@ -1,0 +1,177 @@
+{
+  "theme": {
+    "archetype": "Organic & Earthy",
+    "mode": "light",
+    "description": "Premium startup-level UI with an eco-friendly aesthetic, modern minimal design, soft shadows, and glassmorphism cards."
+  },
+  "colors": {
+    "primary": "#10B981",
+    "primary_dark": "#047857",
+    "primary_light": "#34D399",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "surface_glass": "rgba(255, 255, 255, 0.7)",
+    "text_primary": "#0F172A",
+    "text_secondary": "#64748B",
+    "text_inverse": "#FFFFFF",
+    "border": "#E2E8F0",
+    "border_glass": "rgba(255, 255, 255, 0.3)",
+    "health": {
+      "healthy": "#10B981",
+      "warning": "#F59E0B",
+      "sick": "#EF4444",
+      "healthy_bg": "#D1FAE5",
+      "warning_bg": "#FEF3C7",
+      "sick_bg": "#FEE2E2"
+    }
+  },
+  "typography": {
+    "font_family": "Plus Jakarta Sans",
+    "scale": {
+      "display": { "font_size": 40, "line_height": 48, "font_weight": "800" },
+      "h1": { "font_size": 32, "line_height": 40, "font_weight": "800" },
+      "h2": { "font_size": 24, "line_height": 32, "font_weight": "700" },
+      "h3": { "font_size": 20, "line_height": 28, "font_weight": "600" },
+      "body": { "font_size": 16, "line_height": 24, "font_weight": "400" },
+      "caption": { "font_size": 12, "line_height": 16, "font_weight": "500" }
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48
+  },
+  "effects": {
+    "soft_shadow": {
+      "shadow_color": "#64748B",
+      "shadow_offset": { "width": 0, "height": 4 },
+      "shadow_opacity": 0.08,
+      "shadow_radius": 12,
+      "elevation": 4
+    },
+    "heavy_shadow": {
+      "shadow_color": "#10B981",
+      "shadow_offset": { "width": 0, "height": 8 },
+      "shadow_opacity": 0.2,
+      "shadow_radius": 24,
+      "elevation": 8
+    },
+    "radii": {
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "full": 9999
+    },
+    "glassmorphism": {
+      "background_color": "rgba(255, 255, 255, 0.8)",
+      "border_width": 1,
+      "border_color": "rgba(255, 255, 255, 0.4)",
+      "shadow_color": "#000000",
+      "shadow_offset": { "width": 0, "height": 8 },
+      "shadow_opacity": 0.05,
+      "shadow_radius": 16,
+      "elevation": 3
+    }
+  },
+  "screens": {
+    "home": {
+      "layout_blueprint": {
+        "padding_horizontal": 24,
+        "sections": [
+          {
+            "name": "Top Header",
+            "padding_top": 48,
+            "padding_bottom": 24,
+            "components": ["Welcome Text", "User Name", "Avatar", "Notification Badge"],
+            "iconography": ["notifications-outline (Ionicons)"]
+          },
+          {
+            "name": "Eco Banner Section",
+            "type": "Horizontal ScrollView",
+            "gap": 16,
+            "card_width": 300,
+            "card_height": 160,
+            "padding_bottom": 32
+          },
+          {
+            "name": "Tree Analytics Section",
+            "type": "Grid 2 Columns",
+            "gap": 12,
+            "padding_bottom": 32,
+            "metrics": [
+              { "title": "Total Trees", "icon": "tree-outline" },
+              { "title": "Added This Week", "icon": "add-circle-outline" },
+              { "title": "Watered", "icon": "water-outline" },
+              { "title": "Healthy", "icon": "leaf-outline" },
+              { "title": "Warning", "icon": "warning-outline" },
+              { "title": "Sick", "icon": "medkit-outline" }
+            ]
+          },
+          {
+            "name": "Weekly Activity Section",
+            "type": "Chart Card",
+            "padding_inner": 24,
+            "height": 220,
+            "padding_bottom": 32
+          },
+          {
+            "name": "Recent Activity Feed",
+            "type": "Vertical List",
+            "gap": 16,
+            "padding_bottom": 120
+          }
+        ],
+        "bottom_navigation": {
+          "height": 80,
+          "background_color": "#FFFFFF",
+          "tabs": [
+            { "name": "Home", "icon": "home-outline" },
+            { "name": "Map", "icon": "map-outline" },
+            { "name": "QR Scan", "type": "FAB", "icon": "qr-code-outline" },
+            { "name": "AI Assistant", "icon": "chatbubbles-outline" },
+            { "name": "Profile", "icon": "person-outline" }
+          ],
+          "fab_recipe": {
+            "size": 64,
+            "position_offset": -32,
+            "background": "linear-gradient(#34D399, #10B981)",
+            "icon_size": 32,
+            "icon_color": "#FFFFFF",
+            "shadow": "heavy_shadow"
+          }
+        }
+      }
+    }
+  },
+  "media": {
+    "image_urls": [
+      {
+        "category": "hero_banner_1",
+        "url": "https://images.unsplash.com/photo-1772960826221-f401b678840d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxmb3Jlc3QlMjBjYW5vcHklMjBzdW5saWdodHxlbnwwfHx8fDE3Nzc2Mzg3NDJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Sunlight filters through silhouetted tree branches in a forest."
+      },
+      {
+        "category": "hero_banner_2",
+        "url": "https://images.unsplash.com/photo-1695413440810-5bc32ad8b8a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxjYW1wdXMlMjB0cmVlc3xlbnwwfHx8fDE3Nzc2Mzg3NDJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Tree-lined campus path"
+      },
+      {
+        "category": "hero_banner_3",
+        "url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxwbGFudGluZyUyMGElMjB0cmVlfGVufDB8fHx8MTc3NzYzODc0Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Close up of a green plant, representing tree planting."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Always use the Plus Jakarta Sans font or system alternative for the premium feel.",
+    "Implement glassmorphism on the Eco Banner cards by wrapping them with soft light backgrounds, borders, and backdrop blurs (if supported by React Native) or soft semi-transparent overlays.",
+    "The FAB for QR Scan must be positioned absolutely in the center of the bottom navigation, overflowing above the top edge by 32px with an intense glowing green shadow.",
+    "All interactive elements must include 'data-testid' (or 'testID' in React Native) formatted in kebab-case, e.g., 'testID=\"qr-scan-fab\"'.",
+    "Analytics grid should have equal widths (flex: 1) inside a row container, matching 2 columns perfectly.",
+    "The app should use mobile layout only, rely on Flexbox.",
+    "For the bottom nav bar, use safe area insets at the bottom."
+  ]
+}
